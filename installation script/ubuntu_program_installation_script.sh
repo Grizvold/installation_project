@@ -62,8 +62,8 @@ echo $PASS | sudo -S sudo apt-get install shutter -y
 echo -e "${Red}sudo apt update${RCol}"
 sudo apt update
 
-echo -e "${Red}sudo apt install openjdk-8-jdk${RCol}"
-sudo apt install openjdk-8-jdk
+echo -e "${Red}sudo apt install openjdk-8-jdk -y${RCol}"
+sudo apt install openjdk-8-jdk -y
 
 #installing visual studio code
 echo -e "${Red}sudo apt update -y${RCol}"
@@ -83,6 +83,10 @@ echo $PASS | sudo -S sudo apt update -y
 
 echo -e "${Red}sudo apt install code -y${RCol}"
 echo $PASS | sudo -S sudo apt install code -y
+
+#installing Atom
+echo -e "${Red}sudo apt-get install atom${RCol}"
+echo $PASS | sudo -S sudo apt-get install atom
 
 #installing make
 echo -e "${Red}sudo apt install make -y${RCol}"
