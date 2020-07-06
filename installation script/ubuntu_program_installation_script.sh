@@ -152,7 +152,7 @@ echo $PASS | sudo -S sudo snap install spotify
 
 #HardInfo on Linux
 echo -e "${Red}sudo apt-get install hardinfo${RCol}"
-echo $PASS | sudo -S sudo apt-get install hardinfo
+echo $PASS | sudo -S sudo apt-get install hardinfo -y
 
 #Peek (gif recorder)
 echo -e "${Red}sudo add-apt-repository ppa:peek-developers/stable${RCol}"
